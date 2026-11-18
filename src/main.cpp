@@ -1,27 +1,72 @@
+#include <cstdlib>
 #include <iostream>
-#include <vector>
-#include <string>
+#include <cmath>
 
-template <typename T>
-bool isValueInArray(const std::vector<T>& array, const T& value){
-    for(const auto& valueinarray: array){
-        if(valueinarray == value){return true;}
-    }
-    return false;
+
+int gcd(int a,int b){
+    if(b==0){return std::abs(a);}
+    else{return gcd(b, a%b);}
 }
 
-int main(){
-    std::vector<std::string> names{"Alex", "Betty", "Caroline", "Dave", "Emily", "Fred", "Greg", "Holly"};
-    std::vector<int> numbers{1,6,4,8,12};
-    std::string name{};
-    int number{};
-    while (true) {
-        std::cout << "Enter a name and number: " << "\n";
-        std::cin >> name >> number;
-        if(isValueInArray<std::string>(names, name)){std::cout << name << " was found." << "\n";}
-        else{std::cout << name << " was not found." << "\n";}
-        if(isValueInArray<int>(numbers, number)){std::cout << number << " was found." << "\n";}
-        else{std::cout << number << " was not found." << "\n";}
+
+class Fraction{
+private:
+    int m_numerator{0};
+    int m_denominator{1};
+public:
+    explicit Fraction(int numerator,int denominator=1):
+    m_numerator{numerator}, m_denominator{denominator}{
+        reduce();
     }
+
+    void print(){
+        std::cout << m_numerator <<"/"<< m_denominator << "\n";
+    }
+
+    void reduce(){
+        int gcd_result{gcd(m_numerator,m_denominator)};
+        m_numerator = m_numerator / gcd_result;
+        m_denominator = m_denominator / gcd_result;
+    }
+
+
+    friend Fraction operator*(const Fraction& f1, const Fraction& f2){
+        return Fraction{f1.m_numerator * f2.m_numerator,f1.m_denominator * f2.m_denominator};
+    }
+
+    friend Fraction operator*(const Fraction& f, int value){
+        return Fraction{f.m_numerator * value,f.m_denominator};
+    }
+
+    friend Fraction operator*(int value, const Fraction& f){
+        return f * value;
+    }
+};
+
+
+
+
+int main(){
+    Fraction f1{2, 5};
+    f1.print();
+
+    Fraction f2{3, 8};
+    f2.print();
+
+    Fraction f3{ f1 * f2 };
+    f3.print();
+
+    Fraction f4{ f1 * 2 };
+    f4.print();
+
+    Fraction f5{ 2 * f2 };
+    f5.print();
+
+    Fraction f6{ Fraction{1, 2} * Fraction{2, 3} * Fraction{3, 4} };
+    f6.print();
+
+    Fraction f7{0, 6};
+    f7.print();
+
     return 0;
 }

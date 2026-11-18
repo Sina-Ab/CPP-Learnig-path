@@ -109,3 +109,4 @@ add_gl_target(CPPLearn src/main.cpp)
 
 # one shared build, one add_subdirectory per chapter.
 add_subdirectory(src/Chapter16)
+add_subdirectory(src/Chapter21)
