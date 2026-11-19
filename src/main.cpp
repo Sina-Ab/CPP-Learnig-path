@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <cmath>
+#include <ostream>
 
 
 int gcd(int a,int b){
@@ -14,13 +15,9 @@ private:
     int m_numerator{0};
     int m_denominator{1};
 public:
-    explicit Fraction(int numerator,int denominator=1):
+    explicit Fraction(int numerator=0,int denominator=1):
     m_numerator{numerator}, m_denominator{denominator}{
         reduce();
-    }
-
-    void print(){
-        std::cout << m_numerator <<"/"<< m_denominator << "\n";
     }
 
     void reduce(){
@@ -41,32 +38,37 @@ public:
     friend Fraction operator*(int value, const Fraction& f){
         return f * value;
     }
+
+    friend std::ostream& operator<<(std::ostream& out, const Fraction& f){
+        out << f.m_numerator <<"/"<< f.m_denominator;
+        return out;
+    }
+
+    friend std::istream& operator>>(std::istream& in, Fraction& f){
+        int numerator{};
+        char fraction_char{};
+        int denominator{};
+        in >> numerator >> fraction_char >> denominator;
+        if(denominator == 0){in.setstate(std::ios_base::failbit);}
+        if(in){f = Fraction{numerator,denominator};}
+        return in;
+    }
+
 };
 
 
 
 
 int main(){
-    Fraction f1{2, 5};
-    f1.print();
+    Fraction f1{};
+	std::cout << "Enter fraction 1: ";
+	std::cin >> f1;
 
-    Fraction f2{3, 8};
-    f2.print();
+	Fraction f2{};
+	std::cout << "Enter fraction 2: ";
+	std::cin >> f2;
 
-    Fraction f3{ f1 * f2 };
-    f3.print();
-
-    Fraction f4{ f1 * 2 };
-    f4.print();
-
-    Fraction f5{ 2 * f2 };
-    f5.print();
-
-    Fraction f6{ Fraction{1, 2} * Fraction{2, 3} * Fraction{3, 4} };
-    f6.print();
-
-    Fraction f7{0, 6};
-    f7.print();
+	std::cout << f1 << " * " << f2 << " is " << f1 * f2 << '\n'; // note: The result of f1 * f2 is an r-value
 
     return 0;
 }
