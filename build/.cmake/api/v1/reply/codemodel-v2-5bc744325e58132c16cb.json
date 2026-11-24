@@ -1,0 +1,132 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : [],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f6f22219c74102c3da70.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/Chapter16",
+					"jsonFile" : "directory-src.Chapter16-Debug-a13121fb3c407146e728.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/Chapter16",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "src/Chapter21",
+					"jsonFile" : "directory-src.Chapter21-Debug-fee0e9686190933eb72e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/Chapter21",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "CPPLearn",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "16-Q1::@bad42c01bc2c0f0abe11",
+					"jsonFile" : "target-16-Q1-Debug-410177d3cde1a4d45dbb.json",
+					"name" : "16-Q1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "16-Q2::@bad42c01bc2c0f0abe11",
+					"jsonFile" : "target-16-Q2-Debug-721f68eb10f09ca8df84.json",
+					"name" : "16-Q2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "21-2-question1::@e8b35e9ee04e586d7123",
+					"jsonFile" : "target-21-2-question1-Debug-744abc8648c3cedcc66c.json",
+					"name" : "21-2-question1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "21-4-question1::@e8b35e9ee04e586d7123",
+					"jsonFile" : "target-21-4-question1-Debug-75426ea74f93640c2e75.json",
+					"name" : "21-4-question1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CPPLearn::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CPPLearn-Debug-5e8d414df6a61e77ecc5.json",
+					"name" : "CPPLearn",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/CPP_Projects/Cpp_Learning/build",
+		"source" : "D:/CPP_Projects/Cpp_Learning"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	}
+}

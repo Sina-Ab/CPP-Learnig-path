@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/CPP_Projects/Cpp_Learning/build/cmake_install.cmake",
+		"D:/CPP_Projects/Cpp_Learning/build/src/Chapter16/cmake_install.cmake",
+		"D:/CPP_Projects/Cpp_Learning/build/src/Chapter21/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,32 @@
+[
+{
+  "directory": "D:/CPP_Projects/Cpp_Learning/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRESOURCE_DIR=\\\"D:/CPP_Projects/Cpp_Learning/resources/\\\" -ID:\\CPP_Projects\\Cpp_Learning\\include -std:c++20 -MDd /FoCMakeFiles\\CPPLearn.dir\\src\\main.cpp.obj /FdCMakeFiles\\CPPLearn.dir\\ /FS -c D:\\CPP_Projects\\Cpp_Learning\\src\\main.cpp",
+  "file": "D:/CPP_Projects/Cpp_Learning/src/main.cpp",
+  "output": "D:/CPP_Projects/Cpp_Learning/build/CMakeFiles/CPPLearn.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/CPP_Projects/Cpp_Learning/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRESOURCE_DIR=\\\"D:/CPP_Projects/Cpp_Learning/resources/\\\" -ID:\\CPP_Projects\\Cpp_Learning\\include -std:c++20 -MDd /Fosrc\\Chapter16\\CMakeFiles\\16-Q1.dir\\Question1.cpp.obj /Fdsrc\\Chapter16\\CMakeFiles\\16-Q1.dir\\ /FS -c D:\\CPP_Projects\\Cpp_Learning\\src\\Chapter16\\Question1.cpp",
+  "file": "D:/CPP_Projects/Cpp_Learning/src/Chapter16/Question1.cpp",
+  "output": "D:/CPP_Projects/Cpp_Learning/build/src/Chapter16/CMakeFiles/16-Q1.dir/Question1.cpp.obj"
+},
+{
+  "directory": "D:/CPP_Projects/Cpp_Learning/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRESOURCE_DIR=\\\"D:/CPP_Projects/Cpp_Learning/resources/\\\" -ID:\\CPP_Projects\\Cpp_Learning\\include -std:c++20 -MDd /Fosrc\\Chapter16\\CMakeFiles\\16-Q2.dir\\Question2.cpp.obj /Fdsrc\\Chapter16\\CMakeFiles\\16-Q2.dir\\ /FS -c D:\\CPP_Projects\\Cpp_Learning\\src\\Chapter16\\Question2.cpp",
+  "file": "D:/CPP_Projects/Cpp_Learning/src/Chapter16/Question2.cpp",
+  "output": "D:/CPP_Projects/Cpp_Learning/build/src/Chapter16/CMakeFiles/16-Q2.dir/Question2.cpp.obj"
+},
+{
+  "directory": "D:/CPP_Projects/Cpp_Learning/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRESOURCE_DIR=\\\"D:/CPP_Projects/Cpp_Learning/resources/\\\" -ID:\\CPP_Projects\\Cpp_Learning\\include -std:c++20 -MDd /Fosrc\\Chapter21\\CMakeFiles\\21-2-question1.dir\\2-Question1.cpp.obj /Fdsrc\\Chapter21\\CMakeFiles\\21-2-question1.dir\\ /FS -c D:\\CPP_Projects\\Cpp_Learning\\src\\Chapter21\\2-Question1.cpp",
+  "file": "D:/CPP_Projects/Cpp_Learning/src/Chapter21/2-Question1.cpp",
+  "output": "D:/CPP_Projects/Cpp_Learning/build/src/Chapter21/CMakeFiles/21-2-question1.dir/2-Question1.cpp.obj"
+},
+{
+  "directory": "D:/CPP_Projects/Cpp_Learning/build",
+  "command": "C:\\PROGRA~1\\MIB055~1\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DRESOURCE_DIR=\\\"D:/CPP_Projects/Cpp_Learning/resources/\\\" -ID:\\CPP_Projects\\Cpp_Learning\\include -std:c++20 -MDd /Fosrc\\Chapter21\\CMakeFiles\\21-4-question1.dir\\4-Question1.cpp.obj /Fdsrc\\Chapter21\\CMakeFiles\\21-4-question1.dir\\ /FS -c D:\\CPP_Projects\\Cpp_Learning\\src\\Chapter21\\4-Question1.cpp",
+  "file": "D:/CPP_Projects/Cpp_Learning/src/Chapter21/4-Question1.cpp",
+  "output": "D:/CPP_Projects/Cpp_Learning/build/src/Chapter21/CMakeFiles/21-4-question1.dir/4-Question1.cpp.obj"
+}
+]
